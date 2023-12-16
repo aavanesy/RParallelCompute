@@ -34,7 +34,7 @@ toc()
 print(usa_words)
 
 # All countries, one by one?
-244 <- read.csv('country_links.csv') %>% 
+all_countries <- read.csv('country_links.csv') %>% 
   pull(1) 
 
 ## Function Breakdown -- Extra ----

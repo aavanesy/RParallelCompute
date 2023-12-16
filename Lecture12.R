@@ -56,6 +56,8 @@ by_dest <- common_dest %>% partition(cluster)
 by_dest
 
 ## cluster requires the library to be loaded prior to run
+library(mgcv)
+
 tic()
 models <- common_dest %>% 
   group_by(dest) %>% 

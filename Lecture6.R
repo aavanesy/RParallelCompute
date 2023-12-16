@@ -27,9 +27,9 @@ write.csv(country_links, file = 'country_links.csv', row.names = F)
 
 ## Alternative data - for your personal project ----
 # Not as much data, example for replication purposes
-all_countries <- 'https://en.wikipedia.org/wiki/World_Heritage_Sites_by_country'
+all_countries2 <- 'https://en.wikipedia.org/wiki/World_Heritage_Sites_by_country'
 
-country_links <- read_html(all_countries) %>%
+country_links2 <- read_html(all_countries2) %>%
   html_nodes(".wikitable a") %>%
   html_attr("href") %>% 
   enframe() %>% 
@@ -40,5 +40,5 @@ country_links <- read_html(all_countries) %>%
   select(Country = value) %>% 
   distinct()
 
-write.csv(country_links, file = 'country_links.csv', row.names = F)
+write.csv(country_links2, file = 'country_links2.csv', row.names = F)
 

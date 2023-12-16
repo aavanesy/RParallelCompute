@@ -27,7 +27,7 @@ for(i in 1:10){
   res = c(res, calc_slow(i))
 }
 toc()
-print(res_one)
+print(res)
 
 
 # Using Base R and Apply Scripts ----

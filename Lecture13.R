@@ -2,7 +2,7 @@
 # Coding Session: Text Visualization with wordcloud
 
 library(wordcloud)
-library(wordcloud2)
+# library(wordcloud2)
 library(dplyr)
 
 load('res_map_future.Rdata')

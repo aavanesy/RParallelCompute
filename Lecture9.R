@@ -70,6 +70,8 @@ result <- get_ngramms_silent('xyzz')
 url3 <- 'https://en.wikipedia.org/wiki/United_States'
 result <- get_ngramms_silent(url3)
 
+all_countries <- read.csv('country_links.csv') %>% 
+  pull(1)
 
 tic()
 res_map <- purrr::map(.x = all_countries, .f = get_ngramms_silent)
